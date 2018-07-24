@@ -14,12 +14,26 @@
 		CCC9942020FABB030079A656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC9941F20FABB030079A656 /* Assets.xcassets */; };
 		CCC9942320FABB030079A656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC9942120FABB030079A656 /* LaunchScreen.storyboard */; };
 		E916B13D2106D65B005E30D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916B13C2106D65B005E30D8 /* DetailViewController.swift */; };
+		E95BDADD2107CD910060E6F0 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95BDADC2107CD910060E6F0 /* NewsViewController.swift */; };
 		E9FD4D3B20FD202A0011AAAF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4D3A20FD202A0011AAAF /* ThirdViewController.swift */; };
 		E9FD4D3F20FD281F0011AAAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD4D3E20FD281F0011AAAF /* Images.xcassets */; };
 		E9FD4D4120FD38700011AAAF /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4D4020FD38700011AAAF /* SavedViewController.swift */; };
 		E9FD4D4520FD39960011AAAF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4D4420FD39960011AAAF /* HomeModel.swift */; };
 		E9FD4D4720FD39A90011AAAF /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4D4620FD39A90011AAAF /* LocationModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E95BDB532107DEF60060E6F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CCC9941320FABB020079A656 /* party4upro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = party4upro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +45,7 @@
 		CCC9942220FABB030079A656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC9942420FABB030079A656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E916B13C2106D65B005E30D8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E95BDADC2107CD910060E6F0 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		E9FD4D3A20FD202A0011AAAF /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		E9FD4D3E20FD281F0011AAAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9FD4D4020FD38700011AAAF /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 				E9FD4D4420FD39960011AAAF /* HomeModel.swift */,
 				E9FD4D4620FD39A90011AAAF /* LocationModel.swift */,
 				E916B13C2106D65B005E30D8 /* DetailViewController.swift */,
+				E95BDADC2107CD910060E6F0 /* NewsViewController.swift */,
 			);
 			path = party4upro;
 			sourceTree = "<group>";
@@ -95,6 +111,7 @@
 				CCC9940F20FABB020079A656 /* Sources */,
 				CCC9941020FABB020079A656 /* Frameworks */,
 				CCC9941120FABB020079A656 /* Resources */,
+				E95BDB532107DEF60060E6F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +180,7 @@
 				CCC9941B20FABB020079A656 /* SecondViewController.swift in Sources */,
 				E9FD4D4520FD39960011AAAF /* HomeModel.swift in Sources */,
 				CCC9941720FABB020079A656 /* AppDelegate.swift in Sources */,
+				E95BDADD2107CD910060E6F0 /* NewsViewController.swift in Sources */,
 				E9FD4D3B20FD202A0011AAAF /* ThirdViewController.swift in Sources */,
 				CCC9941920FABB020079A656 /* FirstViewController.swift in Sources */,
 			);
@@ -311,6 +329,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C5XXFQ49K;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = party4upro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,6 +349,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C5XXFQ49K;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = party4upro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

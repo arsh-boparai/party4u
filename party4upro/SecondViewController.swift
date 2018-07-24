@@ -11,9 +11,10 @@ import MapKit
 import CoreLocation
 class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var search: UITextField!
     @IBOutlet weak var mapView: MKMapView!
-    var locationManager:CLLocationManager!
-    
+    let locationManager = CLLocationManager()
+    var locationManager1:CLLocationManager!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +24,6 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -32,13 +32,13 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func determineMyCurrentLocation() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+        locationManager1 = CLLocationManager()
+        locationManager1.delegate = self
+        locationManager1.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager1.requestAlwaysAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
+            locationManager1.startUpdatingLocation()
             //locationManager.startUpdatingHeading()
         }
     }
@@ -52,8 +52,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         // manager.stopUpdatingLocation()
         poiCoodinates.latitude = userLocation.coordinate.latitude
         poiCoodinates.longitude = userLocation.coordinate.longitude
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
+      
         let viewRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(poiCoodinates, 750, 750)
         self.mapView.setRegion(viewRegion, animated: true)
         // Plot pin
@@ -62,11 +61,19 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         self.mapView.addAnnotation(pin)
         
         //add title to the pin
-//        pin.title = selectedLocation!.name
+        //        pin.title = selectedLocation!.name
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     {
         print("Error \(error)")
+    }
+ 
+    @IBAction func SearchBtn(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func nearby(_ sender: UIButton) {
+        
     }
 }
