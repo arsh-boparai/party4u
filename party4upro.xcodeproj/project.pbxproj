@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		CCC9941720FABB020079A656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9941620FABB020079A656 /* AppDelegate.swift */; };
 		CCC9941920FABB020079A656 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9941820FABB020079A656 /* FirstViewController.swift */; };
-		CCC9941B20FABB020079A656 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9941A20FABB020079A656 /* SecondViewController.swift */; };
 		CCC9941E20FABB020079A656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC9941C20FABB020079A656 /* Main.storyboard */; };
 		CCC9942020FABB030079A656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC9941F20FABB030079A656 /* Assets.xcassets */; };
 		CCC9942320FABB030079A656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC9942120FABB030079A656 /* LaunchScreen.storyboard */; };
 		E916B13D2106D65B005E30D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916B13C2106D65B005E30D8 /* DetailViewController.swift */; };
 		E95BDADD2107CD910060E6F0 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95BDADC2107CD910060E6F0 /* NewsViewController.swift */; };
+		E95BDB872107F4370060E6F0 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95BDB862107F4370060E6F0 /* LocationSearchTable.swift */; };
+		E95BDB892107FC320060E6F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95BDB882107FC320060E6F0 /* ViewController.swift */; };
+		E97290C32108459C0000660D /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97290C22108459C0000660D /* RestaurantViewController.swift */; };
 		E9FD4D3B20FD202A0011AAAF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4D3A20FD202A0011AAAF /* ThirdViewController.swift */; };
 		E9FD4D3F20FD281F0011AAAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD4D3E20FD281F0011AAAF /* Images.xcassets */; };
 		E9FD4D4120FD38700011AAAF /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD4D4020FD38700011AAAF /* SavedViewController.swift */; };
@@ -39,13 +41,15 @@
 		CCC9941320FABB020079A656 /* party4upro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = party4upro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC9941620FABB020079A656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC9941820FABB020079A656 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CCC9941A20FABB020079A656 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CCC9941D20FABB020079A656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC9941F20FABB030079A656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC9942220FABB030079A656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC9942420FABB030079A656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E916B13C2106D65B005E30D8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E95BDADC2107CD910060E6F0 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		E95BDB862107F4370060E6F0 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		E95BDB882107FC320060E6F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E97290C22108459C0000660D /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		E9FD4D3A20FD202A0011AAAF /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		E9FD4D3E20FD281F0011AAAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9FD4D4020FD38700011AAAF /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +89,6 @@
 			children = (
 				CCC9941620FABB020079A656 /* AppDelegate.swift */,
 				CCC9941820FABB020079A656 /* FirstViewController.swift */,
-				CCC9941A20FABB020079A656 /* SecondViewController.swift */,
 				CCC9941C20FABB020079A656 /* Main.storyboard */,
 				CCC9941F20FABB030079A656 /* Assets.xcassets */,
 				CCC9942120FABB030079A656 /* LaunchScreen.storyboard */,
@@ -97,6 +100,9 @@
 				E9FD4D4620FD39A90011AAAF /* LocationModel.swift */,
 				E916B13C2106D65B005E30D8 /* DetailViewController.swift */,
 				E95BDADC2107CD910060E6F0 /* NewsViewController.swift */,
+				E95BDB862107F4370060E6F0 /* LocationSearchTable.swift */,
+				E95BDB882107FC320060E6F0 /* ViewController.swift */,
+				E97290C22108459C0000660D /* RestaurantViewController.swift */,
 			);
 			path = party4upro;
 			sourceTree = "<group>";
@@ -174,14 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95BDB892107FC320060E6F0 /* ViewController.swift in Sources */,
 				E916B13D2106D65B005E30D8 /* DetailViewController.swift in Sources */,
+				E95BDB872107F4370060E6F0 /* LocationSearchTable.swift in Sources */,
 				E9FD4D4720FD39A90011AAAF /* LocationModel.swift in Sources */,
 				E9FD4D4120FD38700011AAAF /* SavedViewController.swift in Sources */,
-				CCC9941B20FABB020079A656 /* SecondViewController.swift in Sources */,
 				E9FD4D4520FD39960011AAAF /* HomeModel.swift in Sources */,
 				CCC9941720FABB020079A656 /* AppDelegate.swift in Sources */,
 				E95BDADD2107CD910060E6F0 /* NewsViewController.swift in Sources */,
 				E9FD4D3B20FD202A0011AAAF /* ThirdViewController.swift in Sources */,
+				E97290C32108459C0000660D /* RestaurantViewController.swift in Sources */,
 				CCC9941920FABB020079A656 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +345,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arshdeep.party4upro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -357,7 +365,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arshdeep.party4upro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
