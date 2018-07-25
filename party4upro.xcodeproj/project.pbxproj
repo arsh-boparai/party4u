@@ -343,6 +343,7 @@
 				DEVELOPMENT_TEAM = 3C5XXFQ49K;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = party4upro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +364,7 @@
 				DEVELOPMENT_TEAM = 3C5XXFQ49K;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = party4upro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

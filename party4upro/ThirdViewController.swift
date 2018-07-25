@@ -9,6 +9,28 @@ import MapKit
 import UIKit
 
 class ThirdViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate,HandleMapSearch {
+    @IBAction func Beerbtn(_ sender: UIButton) {
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = "Beer-Stores"
+        request.region = mapView.region
+        let search = MKLocalSearch(request: request)
+        search.start { (response, error) in
+            guard let response = response else {
+                print("Search error: \(String(describing: error))")
+                return
+            }
+
+            for item in response.mapItems {
+
+                print(item)
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = item.placemark.coordinate
+                annotation.title = item.placemark.name
+                self.mapView.addAnnotation(annotation)
+            }
+
+        }
+    }
     @IBAction func foodbtn(_ sender: Any) {
         let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = "restaurants"
