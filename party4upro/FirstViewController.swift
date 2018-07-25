@@ -34,7 +34,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func Save(_ sender: UIButton) {
-        let url = NSURL(string: "http://localhost/party4u/recieve.php") // locahost MAMP - change to point to your database server
+        let url = NSURL(string: "http://okckabaddiclub.com/recieve.php") // locahost MAMP - change to point to your database server
         
         var request = URLRequest(url: url! as URL)
         request.httpMethod = "POST"
